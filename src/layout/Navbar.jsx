@@ -6,6 +6,7 @@ const navLinks = [
     {href: "#about", label: "About"},
     {href: "#projects", label: "Projects"},
     {href: "#experience", label: "Experience"},
+    {href: "#contact", label: "Contact"}
 ]
 
 export const Navbar = () => {
@@ -47,7 +48,7 @@ export const Navbar = () => {
 
                 {/* CTA Button */}
                 <div className="hidden md:block">
-                    <Button size="sm">
+                    <Button size="sm" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>
                         Contact Me
                     </Button>
                 </div>
