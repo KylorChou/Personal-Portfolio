@@ -3,7 +3,7 @@ const experiences = [
     {
         period: "June 2026 - Present",
         role: "Front-End UI/UX Intern",
-        company: "Safran GeoAI",
+        company: "Safran Federal Systems - GeoAI Team",
         description: "Worked on the front-end page of the GeoAI divisions public facing website, ensuring a modern and user-friendly design.",
         technologies: ["React", "Tailwind CSS", "Figma"],
         current: true,
