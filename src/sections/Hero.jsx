@@ -35,6 +35,15 @@ const skills = [
 ];
 
 export const Hero = () => {
+    const handleDownload = () => {
+        const link = document.createElement('a');
+        link.href = '/Resume - Kylor Chou.pdf';
+        link.download = 'Kylor_Chou_Resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
     return <section className="relative min-h-screen flex items-center overflow-hidden">
         {/* Bg Image */}
         <div className="absolute inset-0">
@@ -91,7 +100,7 @@ export const Hero = () => {
                         <Button size="lg">
                             Contact Me <ArrowRight className="w-5 h-5" />
                         </Button>
-                        <AnimatedBorderButton>
+                        <AnimatedBorderButton onClick={handleDownload}>
                             <Download className="w-5 h-5" />
                             Download CV
                         </AnimatedBorderButton>
