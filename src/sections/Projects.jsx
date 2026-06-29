@@ -18,7 +18,7 @@ const projects = [
     {
         title: "Hokie Food App",
         description: "A mobile app for finding events offering free food on campus.",
-        image: "",
+        image: "/projects/hokie-food-map.png",
         tags: ["React Native", "Javascript", "Python", "GeoAPI"],
         github: "https://github.com/KylorChou/Hokie-Food-Map"
     },
